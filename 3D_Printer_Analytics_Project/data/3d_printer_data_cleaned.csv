@@ -1,0 +1,7 @@
+printer_model,layer_height,print_speed,nozzle_temp,bed_temp,print_duration,print_time,success
+MK3,0.2,60,210,60,120,2023-01-31,1
+Ender 3,0.1,50,200,50,90,2023-02-28,1
+MK3,0.3,70,220,65,140,2023-03-31,0
+CR-10,0.2,65,215,60,130,2023-04-30,1
+Ender 3,0.1,55,205,50,100,2023-05-31,0
+Prusa Mini,0.15,60,210,55,110,2023-06-30,1

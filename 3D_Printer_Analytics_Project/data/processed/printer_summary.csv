@@ -1,0 +1,5 @@
+printer_model,success,layer_height,print_duration
+CR-10,1.0,0.2,130.0
+Ender 3,0.5,0.1,95.0
+MK3,0.5,0.25,130.0
+Prusa Mini,1.0,0.15,110.0
