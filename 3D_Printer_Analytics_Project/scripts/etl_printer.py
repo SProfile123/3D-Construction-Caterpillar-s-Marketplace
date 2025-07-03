@@ -1,15 +1,13 @@
-
 import pandas as pd
 
-df = pd.read_csv('../data/3d_printer_data_cleaned.csv')
+# Load dataset
+df = pd.read_csv("../data/3d_printer_data_cleaned.csv")
+
+# Clean and transform
 df.dropna(inplace=True)
-df['print_time'] = pd.to_datetime(df['print_time'])
+df['Order Date'] = pd.to_datetime(df['Order Date'])
+df['Month'] = df['Order Date'].dt.to_period("M")
+df['Profit Margin %'] = (df['Profit'] / df['Sales']) * 100
 
-summary = df.groupby('printer_model').agg({
-    'success': 'mean',
-    'layer_height': 'mean',
-    'print_duration': 'mean'
-}).reset_index()
-
-summary.to_csv('../data/processed/printer_summary.csv', index=False)
-print("ETL complete.")
+# Export cleaned data
+df.to_csv("../data/printer_data_final.csv", index=False)
