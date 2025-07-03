@@ -14,6 +14,7 @@ To analyze the performance of various 3D printer models by understanding the rel
 
 - ✅ Realistic dataset of 3D printer performance
 - ✅ Automated ETL process using Python
+- ✅ End to End SQL queries for Product KPI
 - ✅ Jupyter notebook for EDA & correlation analysis
 - ✅ 📊 Power BI dashboard with 3 dynamic visuals
 - ✅ Clean GitHub structure for portfolio showcase
@@ -38,10 +39,5 @@ Run the Python script to:
 - Load the raw dataset
 - Clean and preprocess
 - Group by printer model
-- Generate a summary CSV of success rate, average duration, and layer height
+- Generate a summary CSV of success rate, average duration and layer height
 
-📄 Script: `scripts/etl_printer.py`
-
-```bash
-cd scripts
-python etl_printer.py
